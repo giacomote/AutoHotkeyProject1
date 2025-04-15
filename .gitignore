@@ -1,0 +1,5 @@
+# IDE settings
+**/.vscode
+
+# Tests and temporary files
+/temp
