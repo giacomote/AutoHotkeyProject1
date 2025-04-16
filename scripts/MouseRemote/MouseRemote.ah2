@@ -13,10 +13,10 @@ to the README.md file.
 
 
 ; Global variables
-programs := ["POWERPNT.EXE"]
+allowedPrograms := ["POWERPNT.EXE"]
 
 scriptName := "MouseRemote"
-remoteMode := false
+paused := true
 
 ; Initialization
 TraySetIcon("static\MouseRemote_pause.ico")
@@ -25,39 +25,39 @@ TrayTip("MouseRemote script is now running!", scriptName, 17)
 ; Pause toggle
 Pause:: {
     global scriptName
-    global remoteMode
+    global paused
 
-    if (!remoteMode) {
-        remoteMode := true
+    if (paused) {
+        paused := false
         TraySetIcon("static\MouseRemote.ico")
         TrayTip("Remote mode activated!", scriptName, 17)
     }
     else {
-        remoteMode := false
+        paused := true
         TraySetIcon("static\MouseRemote_pause.ico")
         TrayTip("Remote mode deactivated!", scriptName, 17)
     }
 }
 
+; Useful functions
+WindowCheck() {
+    activeProcess := WinGetProcessName("A")
+    return ListMethods.ObjectInList(activeProcess, allowedPrograms)
+}
+
+MouseOverRightWindow() {
+    MouseGetPos(,, &winID)
+    winTitle := WinGetProcessName(winID)
+    return ListMethods.ObjectInList(winTitle, allowedPrograms)
+}
+
 ; Business logic
-#HotIf remoteMode
+#HotIf (!paused and WindowCheck() and MouseOverRightWindow())
 
 LButton:: {
-    global programs
-
-    activeProcess := WinGetProcessName("A")
-    if (!ListMethods.ObjectInList(activeProcess, programs))
-        return
-
     Send("{Right}")
 }
 RButton:: {
-    global programs
-
-    activeProcess := WinGetProcessName("A")
-    if (!ListMethods.ObjectInList(activeProcess, programs))
-        return
-
     Send("{Left}")
 }
 
