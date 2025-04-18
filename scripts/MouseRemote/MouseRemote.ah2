@@ -23,8 +23,7 @@ TraySetIcon("static\MouseRemote_pause.ico")
 TrayTip("MouseRemote script is now running!", scriptName, 17)
 
 ; Pause toggle
-Pause:: {
-    global scriptName
+PauseToggle() {
     global paused
 
     if (paused) {
@@ -37,6 +36,14 @@ Pause:: {
         TraySetIcon("static\MouseRemote_pause.ico")
         TrayTip("Remote mode deactivated!", scriptName, 17)
     }
+}
+
+Pause:: {
+    PauseToggle()
+}
+
+^!P:: {
+    PauseToggle()
 }
 
 ; Useful functions

@@ -3,8 +3,8 @@ A script that lets you use your mouse as a remote control to navigate between sl
 slideshow applications (such as PowerPoint).
 
 ## Using the script
-After launching the application, the script remains inactive by default. You can activate (or deactivate) it by
-pressing the `PAUSE` key on your keyboard.
+After launching the application, the script remains inactive by default.  
+To activate / deactivate the application pressing either `PAUSE` key or using `Ctrl + Alt + P` key combination.
 
 When the script is active, the left mouse button allows you to move to the next slide, while the right mouse button
 takes you to the previous slide.
