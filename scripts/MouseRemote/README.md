@@ -10,9 +10,9 @@ When the script is active, the left mouse button allows you to move to the next 
 takes you to the previous slide.
 
 ### Usage notes
-1. The script only switches between the slides only in the specified slideshow applications.
-2. While the script is running and active, you can use the mouse as usual, except on the specified windows (where
-   clicks will navigate between slides).
+- The script only switches between the slides only in the specified slideshow applications.
+- While the script is running and active, you can use the mouse as usual, except on the specified windows (where
+  clicks will navigate between slides).
 
 ## Settings and personalization
 The slideshow applications can be changed (and can also be multiple).
