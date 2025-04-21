@@ -10,8 +10,10 @@ file.
 
 ## Scripts
 - `MouseRemote` --> Which allows you to use your (wireless) mouse as a slideshow remote.
+- `ProcessGetInfo` --> Which allows you to know process name and title of a window.
 
 ## Folder structure
+- `libraries/` --> Some useful libraries.
 - `scripts/` --> All the scripts.  
 - `utils/` --> A collection of utilities that may be shared across different parts of the project.
 
