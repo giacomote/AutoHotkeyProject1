@@ -1,0 +1,34 @@
+# AutoInsertText
+A script that lets you insert specific texts in specific applications with just one click.
+
+## Using the script
+After launching the script, use `Shift + WheelUp` key combination to insert a text, wherever you want.
+
+## Settings and personalization
+The inserted texts are specific to each application and must be set in the `data\inputs.json` file.
+
+### Syntax
+The `data\inputs.json` file must respect the following notation:
+```json
+{
+    "<Process name>": {
+        "<Window title or a substring of it>": "<Text 1>",
+        "<Window title or a substring of it>": "<Text 2>"
+    },
+
+    "<Process name>": {
+        "<Window title or a substring of it>": "<Text 3>"
+    }
+}
+```
+
+**NOTE 1:** `<Process name>` has to be replaced with the process name of an application (e.g. "Code.exe" for Visual
+Studio Code).
+
+**NOTE 2:** `<Window title or a substring of it>` has to be replaced with either one of the following options:
+1. The window title (or a possible title that can be assumed by a window of the specified program).
+2. A substring of the window title.
+3. The word `Any`, to indicate that, for the specified process, the text to insert is always the same, regardless of the
+   window title.
+
+**NOTE 3:** The `data\inputs.json` file can be modified at every time and the script does not need to be reloaded.

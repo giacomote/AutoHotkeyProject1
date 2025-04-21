@@ -8,7 +8,11 @@ This repository and its files are provided by Giacomo Tessari (`@giacomote` on G
 For more details about the license and to view the full terms and conditions, please refer to the [LICENSE](LICENSE)
 file.
 
+**NOTE:** Some used libraries may be released under another license. For more details check every sub-directory in the
+`libraries/` directory.
+
 ## Scripts
+- `AutoInsertText` --> Which allows you to insert specific long texts with a just a click.
 - `MouseRemote` --> Which allows you to use your (wireless) mouse as a slideshow remote.
 - `ProcessGetInfo` --> Which allows you to know process name and title of a window.
 
