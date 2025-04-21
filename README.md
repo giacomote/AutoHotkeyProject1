@@ -1,6 +1,8 @@
 # AutoHotkeyProject1
 A bunch of AutoHotkey (maybe useful) scripts.
 
+**NOTE:** All the scripts are written in AutoHotkey v2 and they are not compatible with AutoHotkey v1.
+
 ## Author and license
 This repository and its files are provided by Giacomo Tessari (`@giacomote` on GitHub), and they are released under the
 "BSD-3-Clause" license.
