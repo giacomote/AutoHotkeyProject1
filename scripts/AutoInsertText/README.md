@@ -32,3 +32,8 @@ Studio Code).
    window title.
 
 **NOTE 3:** The `data\inputs.json` file can be modified at every time and the script does not need to be reloaded.
+
+## Portability
+This application is fully portable, meaning you can move it anywhere you like, as long as the computer has AutoHotkey v2
+installed.  
+If you download the application again, make sure to move the `data/` folder as well to preserve your texts.
