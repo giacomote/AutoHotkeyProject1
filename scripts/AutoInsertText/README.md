@@ -1,10 +1,10 @@
 # AutoInsertText
 A script that lets you insert specific texts in specific applications with just one click.
 
-## Using the script
+## 💻 Using the script
 After launching the script, use `Shift + WheelUp` key combination to insert a text, wherever you want.
 
-## Settings and personalization
+## 🔧 Settings & personalization
 The inserted texts are specific to each application and must be set in the `data\inputs.json` file.
 
 ### Syntax
@@ -33,7 +33,7 @@ Studio Code).
 
 **NOTE 3:** The `data\inputs.json` file can be modified at every time and the script does not need to be reloaded.
 
-## Portability
+## 🌍 Portability
 This application is fully portable, meaning you can move it anywhere you like, as long as the computer has AutoHotkey v2
 installed.  
 If you download the application again, make sure to move the `data/` folder as well to preserve your texts.

@@ -3,7 +3,7 @@ A bunch of AutoHotkey (maybe useful) scripts.
 
 **NOTE:** All the scripts are written in AutoHotkey v2 and they are not compatible with AutoHotkey v1.
 
-## Author and license
+## 📜 Author & license
 This repository and its files are provided by Giacomo Tessari (`@giacomote` on GitHub), and they are released under the
 "BSD-3-Clause" license.
 
@@ -13,17 +13,18 @@ file.
 **NOTE:** Some used libraries may be released under another license. For more details check every sub-directory in the
 `libraries/` directory.
 
-## Scripts
-- `AutoInsertText` --> Which allows you to insert specific long texts with a just a click.
-- `MouseRemote` --> Which allows you to use your (wireless) mouse as a slideshow remote.
-- `ProcessGetInfo` --> Which allows you to know process name and title of a window.
+## 💻 Scripts
+- [x] `AutoInsertText` --> Which allows you to insert specific long texts with a just a click.
+- [x] `MouseRemote` --> Which allows you to use your (wireless) mouse as a slideshow remote.
+- [x] `ProcessGetInfo` --> Which allows you to know process name and title of a window.
+- [ ] `ScriptLauncher` --> Which allows you to launch all multiple script at a time.
 
-## Folder structure
+## 📂 Project structure
 - `libraries/` --> Some useful libraries.
 - `scripts/` --> All the scripts.  
-- `utils/` --> A collection of utilities that may be shared across different parts of the project.
+- `utils/` --> General utilities, that may be shared across different parts of the project.
 
-## Issues
+## 🐛 Issues & bugs
 If you encounter any issues or malfunctions with any script, feel free to open an issue (and maybe propose a solution).
 
 **NOTE:** All the files are released as-is, without any warranties. As such, updates or bug fixes may not be
