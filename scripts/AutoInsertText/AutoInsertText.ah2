@@ -5,11 +5,13 @@
 
 
 ; Global variables
+scriptName := "AutoInsertText"
+
 inputsFile := "data\inputs.json"
 
 ; Initialization
 TraySetIcon("static\AutoInsertText.ico")
-TrayTip("AutoInsertText script is now running!", "AutoInsertText", 17)
+TrayTip("AutoInsertText script is now running!", scriptName, 17)
 
 pathElements := StrSplit(inputsFile, ["\", "/"])
 pathElements.RemoveAt(-1)
@@ -33,8 +35,13 @@ if (!FileExist(inputsFile)) {
     jsonContent := FileRead(inputsFile)
     inputs := Jxon_Load(&jsonContent)
 
-    activeProcessName := WinGetProcessName("A")
-    activeWinTitle := WinGetTitle("A")
+    try {
+        activeProcessName := WinGetProcessName("A")
+        activeWinTitle := WinGetTitle("A")
+    }
+    catch TargetError
+        TrayTip("Target window not found!", scriptName, 18)
+    
 
     input := ""
 
