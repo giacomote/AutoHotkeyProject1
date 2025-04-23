@@ -19,11 +19,16 @@ TrayTip("ProcessGetInfo script is now running!", scriptName, 17)
 ; Business logic
 ^#Lbutton:: {
     MouseGetPos(,, &winID)
-    WinActivate(winID)
 
-    processName := WinGetProcessName(winID)
-    winTitle := WinGetTitle(winID)
-
+    try {
+        WinActivate(winID)
+        
+        processName := WinGetProcessName(winID)
+        winTitle := WinGetTitle(winID)
+    }
+    catch TargetError
+        TrayTip("Target window not found!", scriptName, 18)
+    
     winInfo := Format("{} \\`n{}", processName, winTitle)
     TrayTip(winInfo, scriptName, 17)
 }
