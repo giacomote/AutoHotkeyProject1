@@ -18,6 +18,7 @@ file.
 - [x] `MouseRemote` --> Which allows you to use your (wireless) mouse as a slideshow remote.
 - [x] `ProcessGetInfo` --> Which allows you to know process name and title of a window.
 - [ ] `ScriptLauncher` --> Which allows you to launch all multiple script at a time.
+- [ ] `WheelSetVolume` --> Which allows you to control the volume using the mouse wheel.
 
 ## 📂 Project structure
 - `libraries/` --> Some useful libraries.
