@@ -2,7 +2,9 @@
 A script that lets you insert specific texts in specific applications with just one click.
 
 ## 💻 Using the script
-After launching the script, use `Shift + WheelUp` key combination to insert a text, wherever you want.
+After launching the script, use one of the following key combinations to insert a text:
+- `Shift + MouseWheelUp`
+- `Ctrl + Ins`
 
 ## 🔧 Settings & personalization
 The inserted texts are specific to each application and must be set in the `data\inputs.json` file.

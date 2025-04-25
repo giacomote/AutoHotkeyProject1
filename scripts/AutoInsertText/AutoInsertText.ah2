@@ -31,7 +31,7 @@ if (!FileExist(inputsFile)) {
 }
 
 ; Business logic
-+WheelUp:: {
+InsertText() {
     jsonContent := FileRead(inputsFile)
     inputs := Jxon_Load(&jsonContent)
 
@@ -64,3 +64,6 @@ if (!FileExist(inputsFile)) {
 
     SendText(input)
 }
+
++WheelUp:: InsertText()
+^Ins:: InsertText()
