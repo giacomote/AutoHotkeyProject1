@@ -61,11 +61,7 @@ MouseOverRightWindow() {
 ; Business logic
 #HotIf (!paused and WindowCheck() and MouseOverRightWindow())
 
-LButton:: {
-    Send("{Right}")
-}
-RButton:: {
-    Send("{Left}")
-}
+LButton:: Send("{Right}")
+RButton:: Send("{Left}")
 
 #HotIf
