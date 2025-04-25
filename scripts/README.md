@@ -18,3 +18,8 @@ A script that lets you know some info associated with a specific window (process
 It can be useful to configure other script.
 
 For more details about the script and its functions, please refer to its [README](ProcessGetInfo/README.md) file.
+
+## WheelSetVolume
+A script that lets you control the volume using the mouse wheel.
+
+For more details about the script and its functions, please refer to its [README](WheelSetVolume/README.md) file.
