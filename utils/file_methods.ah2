@@ -15,6 +15,12 @@ class FileMethods {
      * The parent directory.
      */
     static GetParentDir(path) {
+        if (path = "")
+            return ""
+
+        if (!InStr(path, "\") and !InStr(path, "/"))
+            return path
+
         pathElements := StrSplit(path, ["\", "/"])
         pathElements.RemoveAt(-1)
 
@@ -48,7 +54,7 @@ class FileMethods {
         
             parent := this.GetParentDir(dir)
 
-            if (!InStr(parent, "\"))  ; We are at the root of the drive (e.g. parent = "C:")
+            if (parent = dir)
                 break
 
             dir := parent
