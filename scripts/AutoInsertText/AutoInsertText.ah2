@@ -1,6 +1,7 @@
 #Requires AutoHotkey v2.0
 
 #Include ..\..\libraries\JXON_ahk2\_JXON.ahk
+#Include ..\..\utils\file_methods.ah2
 #Include ..\..\utils\map_methods.ah2
 
 
@@ -13,13 +14,7 @@ inputsFile := "data\inputs.json"
 TraySetIcon("static\AutoInsertText.ico")
 TrayTip("AutoInsertText script is now running!", scriptName, 17)
 
-pathElements := StrSplit(inputsFile, ["\", "/"])
-pathElements.RemoveAt(-1)
-dataDir := ""
-for index, value in pathElements {
-    dataDir .= value . "\"
-}
-
+dataDir := FileMethods.GetParentDir(inputsFile)
 if (!FileExist(dataDir)) {
     DirCreate(dataDir)
 }
