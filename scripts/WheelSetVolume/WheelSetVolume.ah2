@@ -1,4 +1,14 @@
+/*
+A script that lets you use your mouse wheel to control the volume.
+
+For more details about the script and its functions, please refer to the README.md file.
+*/
+
+
 #Requires AutoHotkey v2.0
+
+#SingleInstance Ignore
+
 
 ; Initialization
 TraySetIcon("static/WheelSetVolume.ico")

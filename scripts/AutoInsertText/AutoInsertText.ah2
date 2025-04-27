@@ -1,4 +1,14 @@
+/*
+A script that lets you insert fixed texts with just a single click.
+
+For more details about the script, its functions and the ability of personalizing it to your preferences, please refer
+to the README.md file.
+*/
+
+
 #Requires AutoHotkey v2.0
+
+#SingleInstance Ignore
 
 #Include ..\..\libraries\JXON_ahk2\_JXON.ahk
 #Include ..\..\utils\file_methods.ah2

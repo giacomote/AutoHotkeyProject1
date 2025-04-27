@@ -8,7 +8,9 @@ to the README.md file.
 
 
 #Requires AutoHotkey v2.0
+
 #SingleInstance Ignore
+
 #Include ..\..\utils\list_methods.ah2
 
 

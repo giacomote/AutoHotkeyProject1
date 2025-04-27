@@ -6,6 +6,7 @@ For more details about the script and its functions, please refer to the README.
 
 
 #Requires AutoHotkey v2.0
+
 #SingleInstance Ignore
 
 
