@@ -15,7 +15,9 @@ scriptName := "ProcessGetInfo"
 
 ; Initialization
 TraySetIcon("static\ProcessGetInfo.ico")
-TrayTip("ProcessGetInfo script is now running!", scriptName, 17)
+
+if (A_Args.Length = 0 or (A_Args[1] != "-s" and A_Args[1] != "--silent"))
+    TrayTip("ProcessGetInfo script is now running!", scriptName, 17)
 
 ; Business logic
 ^#Lbutton:: {

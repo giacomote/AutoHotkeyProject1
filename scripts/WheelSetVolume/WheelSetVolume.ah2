@@ -12,7 +12,9 @@ For more details about the script and its functions, please refer to the README.
 
 ; Initialization
 TraySetIcon("static/WheelSetVolume.ico")
-TrayTip("WheelSetVolume script is now running!", "WheelSetVolume", 17)
+
+if (A_Args.Length = 0 or (A_Args[1] != "-s" and A_Args[1] != "--silent"))
+    TrayTip("WheelSetVolume script is now running!", "WheelSetVolume", 17)
 
 ; Business logic
 #WheelUp:: Send("{Volume_Up}")

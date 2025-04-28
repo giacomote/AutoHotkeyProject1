@@ -17,12 +17,13 @@ to the README.md file.
 
 ; Global variables
 scriptName := "AutoInsertText"
-
 inputsFile := "data\inputs.json"
 
 ; Initialization
 TraySetIcon("static\AutoInsertText.ico")
-TrayTip("AutoInsertText script is now running!", scriptName, 17)
+
+if (A_Args.Length = 0 or (A_Args[1] != "-s" and A_Args[1] != "--silent"))
+    TrayTip("AutoInsertText script is now running!", scriptName, 17)
 
 dataDir := FileMethods.GetParentDir(inputsFile)
 if (!FileExist(dataDir)) {

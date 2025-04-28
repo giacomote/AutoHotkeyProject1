@@ -22,7 +22,9 @@ paused := true
 
 ; Initialization
 TraySetIcon("static\MouseRemote_pause.ico")
-TrayTip("MouseRemote script is now running!", scriptName, 17)
+
+if (A_Args.Length = 0 or (A_Args[1] != "-s" and A_Args[1] != "--silent"))
+    TrayTip("MouseRemote script is now running!", scriptName, 17)
 
 ; Pause toggle
 PauseToggle() {

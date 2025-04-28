@@ -6,6 +6,10 @@ After launching the script, use one of the following key combinations to insert 
 - `Shift + MouseWheelUp`
 - `Ctrl + Ins`
 
+### Usage notes
+- The script can be launched in a silent mode (without sending the notification at startup) using `-s` or `--silent`
+  options.
+
 ## 🔧 Settings & personalization
 The inserted texts are specific to each application and must be set in the `data\inputs.json` file.
 

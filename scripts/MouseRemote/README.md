@@ -10,6 +10,8 @@ When the script is active, the left mouse button allows you to move to the next 
 takes you to the previous slide.
 
 ### Usage notes
+- The script can be launched in a silent mode (without sending the notification at startup) using `-s` or `--silent`
+  options.
 - The script only switches between the slides only in the specified slideshow applications.
 - While the script is running and active, you can use the mouse as usual, except on the specified windows (where
   clicks will navigate between slides).
