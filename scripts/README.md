@@ -19,6 +19,12 @@ It can be useful to configure other script.
 
 For more details about the script and its functions, please refer to its [README](ProcessGetInfo/README.md) file.
 
+## ScriptLauncher
+A script that lets you launch multiple scripts at a time.
+
+For more details about the script, its functions and the ability of personalizing it to your preferences, please refer
+to its [README](ScriptLauncher/README.md) file.
+
 ## WheelSetVolume
 A script that lets you control the volume using the mouse wheel.
 

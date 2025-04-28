@@ -1,0 +1,26 @@
+{
+    "AutoInsertText": {
+        "active": 1,
+        "delay": 0,
+        "options": "-s",
+        "path": "D:\\MyJames\\Coding\\AutoHotkeyProject1\\scripts\\AutoInsertText\\AutoInsertText.ah2"
+    },
+    "MouseRemote": {
+        "active": 1,
+        "delay": 0,
+        "options": "-s",
+        "path": "D:\\MyJames\\Coding\\AutoHotkeyProject1\\scripts\\MouseRemote\\MouseRemote.ah2"
+    },
+    "ProcessGetInfo": {
+        "active": 1,
+        "delay": 0,
+        "options": "-s",
+        "path": "D:\\MyJames\\Coding\\AutoHotkeyProject1\\scripts\\ProcessGetInfo\\ProcessGetInfo.ah2"
+    },
+    "WheelSetVolume": {
+        "active": 1,
+        "delay": 0,
+        "options": "-s",
+        "path": "D:\\MyJames\\Coding\\AutoHotkeyProject1\\scripts\\WheelSetVolume\\WheelSetVolume.ah2"
+    }
+}
