@@ -26,7 +26,9 @@ class FileMethods {
 
         parentDir := ""
         for element in pathElements {
-            parentDir .= element . "\"
+            parentDir .= element
+            if (A_Index != pathElements.Length)
+                parentDir .= "\"
         }
         
         return parentDir
@@ -47,8 +49,6 @@ class FileMethods {
     static GetProjectDir(filename) {
         dir := A_ScriptDir
         while DirExist(dir) {
-            OutputDebug dir
-
             if (FileExist(dir "\" filename))
                 return dir
         
