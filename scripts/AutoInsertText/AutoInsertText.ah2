@@ -39,20 +39,25 @@ if (!FileExist(inputsFile)) {
 ; Business logic
 InsertText() {
     jsonContent := FileRead(inputsFile)
-    inputs := Jxon_Load(&jsonContent)
+
+    try inputs := Jxon_Load(&jsonContent)
+    catch {
+        TrayTip("[inputs.json] Decoding error. Possible wrong syntax in the file.", scriptName, 3)
+        return
+    }
 
     try {
         activeProcessName := WinGetProcessName("A")
         activeWinTitle := WinGetTitle("A")
     }
-    catch TargetError
+    catch TargetError {
         TrayTip("Target window not found!", scriptName, 18)
+        return
+    }
     
-
     input := ""
 
-    try
-        processInputs := MapMethods.GetKeys(inputs[activeProcessName])
+    try processInputs := MapMethods.GetKeys(inputs[activeProcessName])
     catch UnsetItemError
         return
 

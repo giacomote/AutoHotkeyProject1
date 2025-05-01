@@ -43,7 +43,12 @@ if (!FileExist(configFile)) {
 
 ; Business logic
 jsonContent := FileRead(configFile)
-launchConfig := Jxon_Load(&jsonContent)
+
+try launchConfig := Jxon_Load(&jsonContent)
+catch {
+    TrayTip("[launchConfig.json] Decoding error. Possible wrong syntax in the file.", scriptName, 3)
+    return
+}
 
 for config in launchConfig {
     try {
@@ -52,8 +57,10 @@ for config in launchConfig {
         path := launchConfig[config]["path"]
         options := launchConfig[config]["options"]
     }
-    catch
+    catch {
         TrayTip("[launchConfig.json] Invalid format!", scriptName, 3)
+        break
+    }
 
     if (active) {
         Sleep(delay)
@@ -61,7 +68,9 @@ for config in launchConfig {
         command := Format("{} {} {}", A_AhkPath, path, options)
         
         try Run(command)
-        catch   
+        catch {
             TrayTip(Format("{}: script not found!", config), scriptName, 3)
+            break
+        }
     }
 }
