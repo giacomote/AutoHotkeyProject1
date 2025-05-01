@@ -26,7 +26,7 @@ file.
 - `utils/` --> General utilities, that may be shared across different parts of the project.
 
 ## 🐛 Issues & bugs
-If you encounter any issues or malfunctions with any script, feel free to open an issue (and maybe propose a solution).
+If you encounter any issue or malfunction with any script, feel free to report it (and maybe propose a solution).
 
 **NOTE:** All the files are released as-is, without any warranties. As such, updates or bug fixes may not be
 guaranteed.
