@@ -6,27 +6,21 @@
         "path": "C:\\Path\\To\\Your\\Script"
     },
     "MouseRemote": {
-        "active": 0,
+        "active": 1,
         "delay": 0,
         "options": "-s",
         "path": "C:\\Path\\To\\Your\\Script"
     },
     "ProcessGetInfo": {
-        "active": 0,
+        "active": 1,
         "delay": 0,
         "options": "-s",
         "path": "C:\\Path\\To\\Your\\Script"
     },
     "WheelSetVolume": {
-        "active": 0,
-        "delay": 0,
-        "options": "-s",
-        "path": "C:\\Path\\To\\Your\\Script"
-    },
-    "WinRepositioner": {
         "active": 1,
         "delay": 0,
-        "options": "",
+        "options": "-s",
         "path": "C:\\Path\\To\\Your\\Script"
     }
 }

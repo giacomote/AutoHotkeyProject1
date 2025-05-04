@@ -6,7 +6,7 @@ The script does not need particular actions to be performed, it just can be laun
 autonomously.
 
 ## 🔧 Settings & personalization
-The launching configurations has to be specified in the `data/launchConfig.json` file.
+The launching configurations have to be specified in the `data/launchConfig.json` file.
 
 ### Syntax
 The `data\launchConfig.json` file must respect the following notation:
@@ -28,8 +28,12 @@ The `data\launchConfig.json` file must respect the following notation:
 }
 ```
 
-**NOTE:** Only the fields enclosed in angular brackets (`<>`) need to be set. The other fields (`active`, `delay`,
+**NOTE 1:** Only the fields enclosed in angular brackets (`<>`) need to be set. The other fields (`active`, `delay`,
 `options` and `path`) should not be modified.
+
+**NOTE 2:** If you simply delete the `data\launchConfig.json` file and re-run the script, a default version of the file
+will be automatically recreated, including configuration for all scripts in the project. It will work correctly on your
+device regardless of the project's location.
 
 ## 🌍 Portability
 This application is fully portable, meaning you can move it anywhere you like, as long as the computer has AutoHotkey v2
