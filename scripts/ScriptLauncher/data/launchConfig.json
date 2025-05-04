@@ -3,24 +3,30 @@
         "active": 1,
         "delay": 0,
         "options": "-s",
-        "path": "D:\\MyJames\\Coding\\AutoHotkeyProject1\\scripts\\AutoInsertText\\AutoInsertText.ah2"
+        "path": "C:\\Path\\To\\Your\\Script"
     },
     "MouseRemote": {
-        "active": 1,
+        "active": 0,
         "delay": 0,
         "options": "-s",
-        "path": "D:\\MyJames\\Coding\\AutoHotkeyProject1\\scripts\\MouseRemote\\MouseRemote.ah2"
+        "path": "C:\\Path\\To\\Your\\Script"
     },
     "ProcessGetInfo": {
-        "active": 1,
+        "active": 0,
         "delay": 0,
         "options": "-s",
-        "path": "D:\\MyJames\\Coding\\AutoHotkeyProject1\\scripts\\ProcessGetInfo\\ProcessGetInfo.ah2"
+        "path": "C:\\Path\\To\\Your\\Script"
     },
     "WheelSetVolume": {
-        "active": 1,
+        "active": 0,
         "delay": 0,
         "options": "-s",
-        "path": "D:\\MyJames\\Coding\\AutoHotkeyProject1\\scripts\\WheelSetVolume\\WheelSetVolume.ah2"
+        "path": "C:\\Path\\To\\Your\\Script"
+    },
+    "WinRepositioner": {
+        "active": 1,
+        "delay": 0,
+        "options": "",
+        "path": "C:\\Path\\To\\Your\\Script"
     }
 }
