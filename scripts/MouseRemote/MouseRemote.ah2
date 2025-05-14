@@ -15,7 +15,7 @@ to the README.md file.
 
 
 ; Global variables
-allowedPrograms := ["POWERPNT.EXE"]
+allowedPrograms := ["POWERPNT.EXE", "PDFXCview.exe"]
 
 scriptName := "MouseRemote"
 paused := true
