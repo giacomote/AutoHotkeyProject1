@@ -19,6 +19,7 @@ file.
 - [x] `ProcessGetInfo` --> Which allows you to know process name and title of a window.
 - [x] `ScriptLauncher` --> Which allows you to launch all multiple script at a time.
 - [x] `WheelSetVolume` --> Which allows you to control the volume using the mouse wheel.
+- [ ] `MouseJiggle` --> Which allows you to keep the mouse moving to keep monitor on.
 
 ## 📂 Project structure
 - `libraries/` --> Some useful libraries.
