@@ -6,6 +6,11 @@ A script that lets you insert long texts with just one click.
 For more details about the script, its functions and the ability of personalizing it to your preferences, please refer
 to its [README](AutoInsertText/README.md) file.
 
+## FunctionKeys
+A script that adds common controls for keyboards that lack of dedicated function keys.
+
+For more details about the script and its functions, please refer to its [README](FunctionKeys/README.md) file.
+
 ## MouseRemote
 A script that lets you use your mouse as a remote control to navigate between slides (previous and next) while using
 slideshow applications (such as PowerPoint).

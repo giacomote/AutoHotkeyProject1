@@ -5,6 +5,12 @@
         "options": "-s",
         "path": "C:\\Path\\To\\Your\\Script"
     },
+    "FunctionKeys": {
+        "active": 1,
+        "delay": 0,
+        "options": "-s",
+        "path": "C:\\Path\\To\\Your\\Script"
+    },
     "MouseRemote": {
         "active": 1,
         "delay": 0,

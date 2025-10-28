@@ -15,6 +15,7 @@ file.
 
 ## 💻 Scripts
 - [x] `AutoInsertText` --> Which allows you to insert specific long texts with a just a click.
+- [x] `FunctionKeys` --> Which allows you to use some controls, even if your keyboard doesn't have a key for them.
 - [x] `MouseRemote` --> Which allows you to use your (wireless) mouse as a slideshow remote.
 - [x] `ProcessGetInfo` --> Which allows you to know process name and title of a window.
 - [x] `ScriptLauncher` --> Which allows you to launch all multiple script at a time.
@@ -26,8 +27,9 @@ file.
 - `scripts/` --> All the scripts.  
 - `utils/` --> General utilities, that may be shared across different parts of the project.
 
-## 🐛 Issues & bugs
-If you encounter any issue or malfunction with any script, feel free to report it (and maybe propose a solution).
+## 🐛 Issues, bugs and suggestions
+If you encounter any issue or malfunction with any script, or you want to suggest the integration of a feature, feel
+free to open an issue on GitHub.
 
 **NOTE:** All the files are released as-is, without any warranties. As such, updates or bug fixes may not be
 guaranteed.
