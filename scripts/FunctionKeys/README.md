@@ -1,9 +1,10 @@
 # FunctionKeys
 A script that enhances your keyboard with custom controls and characters not originally supported.
+
 By using defined key combinations, you can send media controls or insert specific characters.
 
 ## 💻 Using the script
-After launching the application, you are able to use your favorite controls and characters.
+After launching the application, you are able to use your favorite controls and characters.  
 The basic (and originally set) key combinations are the ones indicated below:
 
 | Control / Character | Shortcut  |
