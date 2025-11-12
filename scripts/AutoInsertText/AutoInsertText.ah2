@@ -29,7 +29,7 @@ dataDir := FileMethods.GetParentDir(inputsFile)
 if (!FileExist(dataDir)) {
     DirCreate(dataDir)
 }
-    
+
 if (!FileExist(inputsFile)) {
     initialContent := Map("firefox.exe", Map("Any", "https://github.com/giacomote/AutoHotkeyProject1"))
     jsonContent := Jxon_Dump(initialContent, 4)

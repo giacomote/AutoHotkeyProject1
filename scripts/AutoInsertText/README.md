@@ -11,7 +11,7 @@ After launching the script, use one of the following key combinations to insert 
   options.
 
 ## 🔧 Settings & personalization
-The inserted texts are specific to each application and must be set in the `data\inputs.json` file.
+The inserted texts must be set in the `data\inputs.json` file.
 
 ### Syntax
 The `data\inputs.json` file must respect the following notation:
