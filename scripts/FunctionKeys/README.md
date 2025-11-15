@@ -16,12 +16,11 @@ The basic (and originally set) key combinations are the ones indicated below:
 ## 🔧 Settings & personalization
 You can add custom key combinations by editing the `data/keys.json` file.
 
-**NOTE**: To use some characters, you may need to use specific scancodes (`SCxxxx`) for your keyboard layout.
+Once the file is updated, the shortcuts are automatically reloaded within one second.
 
-**NOTE**: After updating the `data/keys.json` file, reload the key combinations by pressing `Ctrl + Alt + R`.
+**NOTE**: To use some characters, you may need to use specific scancodes (`SCxxxx`) for your keyboard layout.  
+**NOTE**: You can manually reload shortcuts from the `data/keys.json` file at any time by pressing `Ctrl + Alt + R`.
 
 ### Usage notes
 - The script can be launched in a silent mode (without sending the notification at startup) using `-s` or `--silent`
   options.
-- If you update the `data/keys.json` file, the new hotkeys will not be created until the you press the `Ctrl + Alt + R`
-  key combination.

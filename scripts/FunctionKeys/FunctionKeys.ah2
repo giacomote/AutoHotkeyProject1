@@ -21,6 +21,7 @@ For usage, configuration, and personalization options, see the accompanying READ
 scriptName := "FunctionKeys"
 keysFile := "data\keys.json"
 createdHotkeys := []
+lastModified := ""
 
 ; Initialization
 TraySetIcon("static/FunctionKeys.ico")
@@ -72,10 +73,26 @@ RemoveHotkeys() {
 
 ReloadKeys() {
     LoadKeys()
-    TrayTip("All the keys has now been reloaded!", scriptName, 17)
+    TrayTip("Key combinations has been reloaded!", scriptName, 17)
+}
+
+CheckFileModified() {
+    global lastModified, keysFile
+    
+    if (!FileExist(keysFile))
+        return
+    
+    currentModified := FileGetTime(keysFile)
+    if (lastModified != currentModified) {
+        lastModified := currentModified
+        ReloadKeys()
+    }
 }
 
 ; Business logic
 LoadKeys()
+
+lastModified := FileGetTime(keysFile)
+SetTimer(CheckFileModified, 1000)
 
 ^!r:: ReloadKeys()
