@@ -12,6 +12,12 @@ A script that lets you create new shortcuts for your keyboard (both for media co
 For more details about the script, its functions and the ability of personalizing it to your preferences, please refer
 to its [README](FunctionKeys/README.md) file.
 
+## MouseJiggle
+A script that allows you to keep the mouse moving, in order to prevent your computer from going to sleep.
+
+For more details about the script and the ability of personalizing it to your preferences, please refer to the
+[README](MouseJiggle/README.md) file.
+
 ## MouseRemote
 A script that lets you use your mouse as a remote control to navigate between slides (previous and next) while using
 slideshow applications (such as PowerPoint).
