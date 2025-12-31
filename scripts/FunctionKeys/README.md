@@ -22,5 +22,5 @@ Once the file is updated, the shortcuts are automatically reloaded within one se
 **NOTE**: You can manually reload shortcuts from the `data/keys.json` file at any time by pressing `Ctrl + Alt + R`.
 
 ### Usage notes
-- The script can be launched in a silent mode (without sending the notification at startup) using `-s` or `--silent`
-  options.
+The script can be launched in a silent mode (without sending the notification at startup) using `-s` or `--silent`
+options.

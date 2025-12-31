@@ -4,7 +4,7 @@ slideshow applications (such as PowerPoint).
 
 ## 💻 Using the script
 After launching the application, the script remains inactive by default.  
-To activate / deactivate the application pressing either `PAUSE` key or using `Ctrl + Alt + P` key combination.
+To activate / deactivate the application, you can use either the `PAUSE` key or the `Ctrl + Alt + P` key combination.
 
 When the script is active, the left mouse button allows you to move to the next slide, while the right mouse button
 takes you to the previous slide.
