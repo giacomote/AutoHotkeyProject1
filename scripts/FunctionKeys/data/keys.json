@@ -2,7 +2,7 @@
     "!k": "{Media_Play_Pause}",
 	"!l": "{Media_Next}",
 	"!j": "{Media_Prev}",
-	"<^>!<": "{AppsKey}",
+	"<^>!,": "{AppsKey}",
     "<^>!SC0D": "~",
     "<^>!SC0C": "`"
 }
