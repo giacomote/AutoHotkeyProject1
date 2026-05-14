@@ -51,6 +51,7 @@ LoadKeys() {
     for keyCombo, toSend in hotkeys {
         createdHotkeys.Push(keyCombo)
         Hotkey(keyCombo, MakeHandler(toSend))
+        Hotkey(keyCombo, "On")
     }
 
     return
@@ -66,7 +67,7 @@ RemoveHotkeys() {
     global createdHotkeys
 
     for idx, k in createdHotkeys {
-        Hotkey(k, "")
+        Hotkey(k, "Off")
     }
     createdHotkeys := []
 }

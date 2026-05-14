@@ -10,6 +10,9 @@ The basic (and originally set) key combinations are the ones indicated below:
 | Control / Character | Shortcut  |
 |:-------------------:|:---------:|
 | Play/Pause          | Alt + K   |
+| Next Track          | Alt + L   |
+| Prev Track          | Alt + J   |
+| Menu (Context Menu) | AltGr + < |
 | `~`                 | AltGr + ì |
 | `` ` ``             | AltGr + ' |
 
